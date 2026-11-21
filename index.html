@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 01 | Login UI - Crafted Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="auth-card">
+
+        <section class="welcome-panel">
+            <h1>Hello!</h1>
+            <p>Welcome to our platform.</p>
+
+            <p class="welcome-note">
+                New here? Create an account
+                and start your journey with us.
+            </p>
+
+            <button class="signup-btn" id="showSignup">
+                Sign Up
+            </button>
+        </section>
+
+        <section class="form-panel">
+
+            <h2 id="formTitle">Login</h2>
+            <p class="subtitle" id="formSubtitle">
+                Welcome back! Please enter your details.
+            </p>
+
+            <form id="authForm">
+
+                <div class="field" id="nameField" hidden>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name"
+                        placeholder="Enter your name">
+                </div>
+
+                <div class="field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                        placeholder="Enter your email" required>
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password"
+                        placeholder="Enter your password" required>
+                </div>
+
+                <div class="form-options" id="loginOptions">
+                    <label>
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="login-btn"
+                    id="submitBtn">
+                    Login
+                </button>
+
+                <p id="message"></p>
+
+            </form>
+
+            <p class="bottom-text">
+                Designed by Crafted Web
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
